@@ -1,0 +1,8 @@
+{
+  "name": "Cyber Organic",
+  "description": "Plataforma serverless de software distribuido. Integramos telemetría de usuario en tiempo real con agentes cognitivos de Vertex AI y despliegue global en Google Cloud.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/og-image.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#3DDC84" />
+    <script>
+      window.deferredPrompt = null;
+      window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        window.deferredPrompt = e;
+      });
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.log('SW registration failed:', err);
+          });
+        });
+      }
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <title>Cyber Organic | Plataforma de Infraestructura Bio-Digital e IA</title>
+    <meta name="title" content="Cyber Organic | Plataforma de Infraestructura Bio-Digital e IA" />
+    <meta name="description" content="Plataforma serverless de software distribuido. Integramos telemetría de usuario en tiempo real con agentes cognitivos de Vertex AI y despliegue global en Google Cloud." />
+    <meta name="keywords" content="bio-digital infrastructure, vertex ai agents, real-time data engine, google cloud architecture, serverless pwa, micro-saas platform" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:site_name" content="Cyber Organic" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.cyberorganicagency.com/" />
+    <meta property="og:title" content="Cyber Organic | Plataforma de Infraestructura Bio-Digital e IA" />
+    <meta property="og:description" content="Plataforma serverless de software distribuido. Integramos telemetría de usuario en tiempo real con agentes cognitivos de Vertex AI y despliegue global en Google Cloud." />
+    <meta property="og:image" itemprop="image" content="https://www.cyberorganicagency.com/og-image.png" />
+    <meta property="og:image:secure_url" content="https://www.cyberorganicagency.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <link rel="image_src" href="https://www.cyberorganicagency.com/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.cyberorganicagency.com/" />
+    <meta property="twitter:title" content="Cyber Organic | Plataforma de Infraestructura Bio-Digital e IA" />
+    <meta property="twitter:description" content="Plataforma serverless de software distribuido. Integramos telemetría de usuario en tiempo real con agentes cognitivos de Vertex AI y despliegue global en Google Cloud." />
+    <meta property="twitter:image" content="https://www.cyberorganicagency.com/og-image.png" />
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Cyber Organic",
+      "headline": "Sistemas Bio-Digitales e Inteligencia Artificial Generativa",
+      "description": "Plataforma serverless de software distribuido. Integramos telemetría de usuario en tiempo real con agentes cognitivos de Vertex AI y despliegue global en Google Cloud.",
+      "url": "https://www.cyberorganicagency.com/",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

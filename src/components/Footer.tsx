@@ -1,0 +1,51 @@
+import { Link } from 'react-router-dom';
+import Logo from './Logo';
+
+
+
+export default function Footer() {
+  
+
+  return (
+    <footer className="w-full py-20 px-12 border-t border-white/5 bg-brand-dark">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto">
+        <div>
+          <Logo className="mb-8" />
+          <p className="font-sans text-xs tracking-widest uppercase text-gray-400 leading-relaxed mb-6">
+            PLATAFORMA DE INFRAESTRUCTURA BIO-DIGITAL E INTELIGENCIA ARTIFICIAL APLICADA
+          </p>
+          
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <h5 className="font-sans text-xs tracking-[0.3em] text-white uppercase mb-2">ACCESO / CONTACTO</h5>
+          <a href="mailto:info@cyberorganicagency.com" className="font-serif italic text-sm text-brand-gold hover:text-brand-cyan transition-colors duration-700 cursor-pointer block">
+            info@cyberorganicagency.com
+          </a>
+          <a href="https://wa.me/5555991812505" target="_blank" rel="noopener noreferrer" className="font-serif italic text-sm text-brand-gold hover:text-brand-cyan transition-colors duration-700 cursor-pointer block">
+            +55 55 99181 2505
+          </a>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <h5 className="font-sans text-xs tracking-[0.3em] text-white uppercase mb-2">Redes Sociales</h5>
+          <div className="flex flex-wrap gap-6">
+            <a href="https://www.instagram.com/cyberorganicagency" target="_blank" rel="noopener noreferrer" className="font-sans text-xs tracking-widest uppercase text-gray-400 hover:text-brand-cyan transition-colors duration-700">Instagram</a>
+            <a href="https://www.facebook.com/cyberorganicagency" target="_blank" rel="noopener noreferrer" className="font-sans text-xs tracking-widest uppercase text-gray-400 hover:text-brand-cyan transition-colors duration-700">Facebook</a>
+            <a href="https://x.com/cyberorganicagency" target="_blank" rel="noopener noreferrer" className="font-sans text-xs tracking-widest uppercase text-gray-400 hover:text-brand-cyan transition-colors duration-700">X</a>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
+        <p className="font-sans text-xs tracking-widest text-gray-400 text-center">
+          © 2026 CYBER ORGANIC. Todos los derechos reservados. Desarrollado sobre Google Cloud Platform y Firebase.
+        </p>
+        <div className="flex gap-8">
+          <Link to="/privacidad" className="font-sans text-xs tracking-widest uppercase text-gray-400 hover:text-white transition-colors">Política de Privacidad</Link>
+          <Link to="/terminos" className="font-sans text-xs tracking-widest uppercase text-gray-400 hover:text-white transition-colors">Términos de Servicio</Link>
+        </div>
+      </div>
+    </footer>
+  );
+}
