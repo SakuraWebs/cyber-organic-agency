@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "agency",
     "public": "dist",
     "ignore": [
       "firebase.json",
@@ -9,10 +10,7 @@
     "rewrites": [
       {
         "source": "**",
-        "run": {
-          "serviceId": "NOME-DO-SEU-SERVICO-CLOUD-RUN",
-          "region": "us-central1"
-        }
+        "destination": "/index.html"
       }
     ]
   }

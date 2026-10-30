@@ -37,3 +37,5 @@ lerna-debug.log*
 *.sln
 *.sw?
 .DS_Store
+
+firebase-applet-config.json
